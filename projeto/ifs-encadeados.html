@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Ifs encadeados</title>
+</head>
+<body>
+	<h3>Exercícios extra de ifs encadeados</h3>
+	<script>
+		
+		var salarioMensal = 1000;
+		var bonus = 0;
+
+		if (salarioMensal > 0 && salarioMensal < 1000) {
+			bonus = salarioMensal * 0.05;
+			console.log("Bônus de 5%");
+		} else if (salarioMensal < 2000){
+			bonus = salarioMensal * 0.10;
+			console.log("Bônus de 10%");
+		} else {
+			bonus = salarioMensal * 0.15;
+			console.log("Bônus de 15%");
+		}
+
+		console.log(bonus);
+		
+
+		var nome = "Leonardo";
+		console.log(typeof nome);
+
+		nome = 10;
+		console.log(typeof nome); 
+
+		nome = "20"
+		console.log(typeof nome);
+
+
+	</script>
+</body>
+</html>
