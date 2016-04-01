@@ -1,7 +1,9 @@
 
-var trPacientes = document.getElementsByClassName("paciente"); // cria array de trs
+var trPacientes = document.getElementsByClassName("paciente");
 
-percorreArray(trPacientes, function(pacienteTr){
+percorreArray(trPacientes, function (pacienteTr){
+
+	var pacienteTr = trPacientes[posicaoAtual];
 
 	var tdNome = pacienteTr.getElementsByClassName("info-nome")[0]; //[0] para pegar sempre a posição atual
 	var tdPeso = pacienteTr.getElementsByClassName("info-peso")[0];
@@ -22,15 +24,8 @@ percorreArray(trPacientes, function(pacienteTr){
 					console.log("Erro! altura não pode ser igual a zero.");
 				}
 		}
-	};
+	};	
 
 
-	var imc = pacienteAtual.pegaImc();
-
-	var tdImc = pacienteTr.getElementsByClassName("info-imc")[0];
-	tdImc.textContent = imc;
-
-	console.log(imc);
-
-
+	console.log(pacienteAtual.nome);
 });
